@@ -1,0 +1,90 @@
+body {
+  font-family: 'Rubik', sans-serif;
+  background: linear-gradient(to bottom right, #02040f, #002642);
+  color: white;
+  min-height: 100vh;
+}
+
+h2 {
+  padding: 2rem;
+  width: 30%;
+  text-align: center;
+
+  margin: auto;
+  font-weight: 200;
+}
+.title {
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 0.3rem;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+/* .formLine {
+  margin:10px;
+  padding:10px;
+  background-color: cornflowerblue;
+} */
+
+table {
+  margin: auto;
+}
+button {
+  border-radius: 0.3rem;
+  padding: 0.4rem;
+  margin-top: 0.6rem;
+  border: none;
+}
+
+.modal {
+  width: 200px;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  background-color: rgba(255, 255, 255, 0.2);
+
+  text-align: center;
+
+  padding: 0.6rem 0;
+  border-radius: 1rem;
+  transform: translateX(-50%);
+}
+
+.hidden {
+  display: none;
+}
+
+.ghost-svg {
+  width: 21px;
+}
+
+.pacman {
+  width: 21px;
+  transform: rotate(0deg);
+}
+
+.up {
+  transform: rotate(-90deg);
+}
+.down {
+  transform: rotate(90deg);
+}
+
+.left {
+  transform: rotateY(180deg);
+}
+
+.right {
+  transform: rotateY(0deg);
+}
+
+.overlay {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
