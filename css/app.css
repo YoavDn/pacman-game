@@ -7,11 +7,11 @@ body {
 
 h2 {
   padding: 2rem;
-  width: 30%;
+
   text-align: center;
 
   margin: auto;
-  font-weight: 200;
+  font-weight: 900;
 }
 .title {
   font-size: 2rem;
@@ -36,28 +36,43 @@ table {
   margin: auto;
 }
 button {
-  border-radius: 0.3rem;
-  padding: 0.4rem;
-  margin-top: 0.6rem;
+  background: linear-gradient(to bottom right, #02040f, #002642);
+  color: white;
+  font-weight: 100;
+  font-family: 'Rubik', sans-serif;
+  letter-spacing: 0.3rem;
+  font-size: 1.3rem;
+
+  border-radius: 0.6rem;
+  padding: 1rem;
+
   border: none;
 }
 
+.msg {
+  background: linear-gradient(to bottom right, #02040f, #002642);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .modal {
-  width: 200px;
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: rgba(255, 255, 255, 0.7);
   position: absolute;
+  color: #02040f;
   left: 50%;
-  top: 20%;
-  background-color: rgba(255, 255, 255, 0.2);
-
+  top: 50%;
   text-align: center;
-
-  padding: 0.6rem 0;
+  transform: translate(-50%, -50%);
   border-radius: 1rem;
-  transform: translateX(-50%);
+  z-index: 101;
+  transition: all 0.5s;
 }
 
 .hidden {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .ghost-svg {
@@ -85,6 +100,14 @@ button {
 }
 
 .overlay {
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
+  position: fixed;
+  padding-top: 3rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s;
 }
